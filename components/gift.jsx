@@ -1,4 +1,5 @@
-import styles from "../styles/gift.module.css"
+import styles from "../styles/gift.module.css";
+
 const Gift = () => {
     return (
         <div className={styles.gift}>
