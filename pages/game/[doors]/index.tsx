@@ -11,11 +11,12 @@ const Game = () => {
 
   const { doors } = router.query;
 
-  const generateWinningDoorNumber = (value) => Math.floor(Math.random() * parseInt(value));
+  const generateWinningDoorNumber = (value) => Math.floor(Math.random() * parseInt(value) + 1);
 
   useEffect(() => {
     const numDoors = +doors;
     const doorHaveGift = generateWinningDoorNumber(numDoors);
+    console.log(numDoors, doorHaveGift)
     const listDoor = createDoors(numDoors, doorHaveGift);
     setDoors(listDoor);
   }, [doors]);

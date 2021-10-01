@@ -1,34 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Monty Hall - Encontre a porta premida
 
-## Getting Started
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/renatomak/projeto-sds3/blob/main/LICENSE)
 
-First, run the development server:
+## Sobre o projeto
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Para começar o jogo:
+1 - o participante irá escolher a quantidade de portas a serem apresentadas.
+2 - O número da porta com o prêmio é gerado aleatoriamente.
+3 - O participante irá selecionar a porta na qual acredita que está o prêmio.
+4 - Na sequencia serão abertas algumas das portas não selecionada pelo participante. 
+5 - Não aparecendo a porta premiada, será dado ao participante oportunidade de trocar de porta.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A sequencia se repete até que seja encontrada o prêmio. 
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Layout
 
-## Learn More
+<div  align="center">
+  <h2>Modelo fornecido para o testes</h2>
+  <img alt="layout" title="#layout Home" src="public/asserts/carrinho-com-frete.png" height="350"/>
+  <img alt="layout" title="#layout Home" src="public/asserts/carrinho-sem-frete.png" height="350" />
+</div>
 
-To learn more about Next.js, take a look at the following resources:
+<div  align="center">
+  <h2>Resultado</h2>
+  <img alt="layout" title="#layout Home" src="public/asserts/minha-tela-com-frete.png"  height="400"/>
+  <img alt="layout" title="#layout Home" src="public/asserts/minha-tela-sem-frete.png" height="400" />
+</div>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Tecnologias utilizadas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Front end
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/html_original_wordmark_logo_icon_146478.png" alt="html" width="40" height="40" style="max-width:100%;" /> &nbsp; &nbsp; &nbsp; &nbsp;
+<img src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_css_icon_130661.png" alt="css" width="40" height="40" style="max-width:100%;" /> &nbsp; &nbsp; &nbsp; &nbsp;
+<img src="https://cdn.icon-icons.com/icons2/2108/PNG/512/javascript_icon_130900.png" alt="javascript" width="40" height="40" style="max-width:100%;" /> &nbsp; &nbsp; &nbsp; &nbsp;
+<img src="https://miro.medium.com/max/318/1*p1TndLk3UsGPBsM7qHPZIw.png" alt="styled component" width="40" height="40" style="max-width:100%;" /> &nbsp; &nbsp; &nbsp; &nbsp;
+<img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/react_original_wordmark_logo_icon_146375.png" alt="react" width="40" height="40" style="max-width:100%;" /> &nbsp; &nbsp; &nbsp; &nbsp;
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+# Como executar o projeto localmente
+
+Pré-requisitos:
+npm / yarn
+Spring Tool Suite
+
+1. Clone o [Repositório](https://github.com/renatomak/codeby-test-shopping-cart.git) do projeto no GitHub
+2. Entre na pasta do projeto
+3. Instale as dependências - npm install ou yarn install
+4. Inicie o projeto - npm start ou yarn start

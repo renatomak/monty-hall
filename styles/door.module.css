@@ -23,10 +23,7 @@
     background-color: chocolate;
     align-items: center;
     flex-grow: 1;
-    padding: 15px;
-
-    /* temp */
-    
+    padding: 15px;    
 }
 .floor {
     height: 10px;
