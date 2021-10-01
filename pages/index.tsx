@@ -2,8 +2,13 @@ import Head from 'next/head';
 import Card from '../components/card';
 import styles from '../styles/form.module.css';
 import Link from 'next/link';
+import NumberInput from '../components/numberInput';
+import { useState } from 'react';
 
 export default function Form() {
+  const [qtdDoors, setQtdDoors] = useState(3);
+  const [doorWithGift, setDoorWithGift] = useState(1);
+
   return (
     <div className={styles.form}>
       <Head>
@@ -14,12 +19,24 @@ export default function Form() {
         <Card bgcolor="#c0392c">
           <h1>Monty Hall</h1>
         </Card>
-        <Card></Card>
+        <Card>
+          <NumberInput 
+            value={qtdDoors} 
+            onChange={newQtd => setQtdDoors(newQtd)} 
+            text="Quantidade de Portas?"
+          />
+        </Card>
       </div>
       <div>
-        <Card></Card>
+      <Card>
+          <NumberInput 
+            value={doorWithGift} 
+            onChange={newDoorWithGift => setDoorWithGift(newDoorWithGift)} 
+            text="Porta Premida"
+          />
+        </Card>
         <Card bgcolor="#28a085">
-          <Link href={`/game/4/2`}>
+          <Link href={`/game/${qtdDoors}/${doorWithGift}`}>
             <h2 className={styles.link}>Iníciar</h2>
           </Link>
         </Card>
