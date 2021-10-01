@@ -1,15 +1,16 @@
 # Monty Hall - Encontre a porta premida
 
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/renatomak/projeto-sds3/blob/main/LICENSE)
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/renatomak/monty-hall/blob/main/LICENSE)
 
 ## Sobre o projeto
 
 Para começar o jogo:
-1 - o participante irá escolher a quantidade de portas a serem apresentadas.
-2 - O número da porta com o prêmio é gerado aleatoriamente.
-3 - O participante irá selecionar a porta na qual acredita que está o prêmio.
-4 - Na sequencia serão abertas algumas das portas não selecionada pelo participante. 
-5 - Não aparecendo a porta premiada, será dado ao participante oportunidade de trocar de porta.
+
+1. o participante irá escolher a quantidade de portas a serem apresentadas;
+2. O número da porta com o prêmio é gerado aleatoriamente.
+3. O participante irá selecionar a porta na qual acredita que está o prêmio.
+4. Na sequencia serão abertas algumas das portas não selecionada pelo participante.
+5. Não aparecendo a porta premiada, será dado ao participante oportunidade de trocar de porta.
 
 A sequencia se repete até que seja encontrada o prêmio. 
 
