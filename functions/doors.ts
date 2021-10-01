@@ -1,10 +1,13 @@
 import DoorModel from '../model/door';
 
-export const createDoors = (qtde: number, selected: number): DoorModel[] => {
+export const createDoors = (
+  qtde: number,
+  doorWithGift: number
+): DoorModel[] => {
   return Array.from({ length: qtde }, (_, i) => {
     const number = i + 1;
 
-    const haveGift = number === selected;
+    const haveGift = number === doorWithGift;
 
     return new DoorModel(number, haveGift);
   });
@@ -14,13 +17,12 @@ export const updateDoors = (
   doors: DoorModel[],
   modifiedDoor: DoorModel
 ): DoorModel[] => {
+  return doors.map((currentDoor) => {
+    const equalModified = currentDoor.number === modifiedDoor.number;
 
-    return doors.map(currentDoor => {
-        const equalModified = currentDoor.number === modifiedDoor.number;
-
-        if(equalModified) {
-            return modifiedDoor;
-        }
-        return modifiedDoor.open ? currentDoor : currentDoor.deselect();
-    })
+    if (equalModified) {
+      return modifiedDoor;
+    }
+    return modifiedDoor.open ? currentDoor : currentDoor.deselect();
+  });
 };

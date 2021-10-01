@@ -9,8 +9,8 @@ interface DoorProps {
 
 const Door = (props: DoorProps) => {
   const door = props.value;
-  const { selected, number } = door;
-  const selectedClass = selected && !door.open ? styles.selected : '';
+  const { doorWithGift, number } = door;
+  const selectedClass = doorWithGift && !door.open ? styles.doorWithGift : '';
 
   const toggleSelection = (e) => props.onChange(door.changeSelected());
   const OpenTheDoor = (e) => {
