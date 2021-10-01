@@ -12,7 +12,9 @@ Para começar o jogo:
 4. Na sequencia serão abertas algumas das portas não selecionada pelo participante.
 5. Não aparecendo a porta premiada, será dado ao participante oportunidade de trocar de porta.
 
-A sequencia se repete até que seja encontrada o prêmio. 
+A sequencia se repete até que seja encontrada o prêmio.
+
+["Acesse o Jogo aqui"](https://portapremiada.netlify.app/)
 
 ---
 
