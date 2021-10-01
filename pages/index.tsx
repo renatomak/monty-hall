@@ -7,7 +7,6 @@ import { useState } from 'react';
 
 export default function Form() {
   const [qtdDoors, setQtdDoors] = useState(3);
-  const [doorWithGift, setDoorWithGift] = useState(1);
 
   return (
     <div className={styles.form}>
@@ -20,23 +19,17 @@ export default function Form() {
           <h1>Monty Hall</h1>
         </Card>
         <Card>
-          <NumberInput 
-            value={qtdDoors} 
-            onChange={newQtd => setQtdDoors(newQtd)} 
+          <NumberInput
+            value={qtdDoors}
+            onChange={(newQtd) => setQtdDoors(newQtd)}
             text="Quantidade de Portas?"
           />
         </Card>
       </div>
       <div>
-      <Card>
-          <NumberInput 
-            value={doorWithGift} 
-            onChange={newDoorWithGift => setDoorWithGift(newDoorWithGift)} 
-            text="Porta Premida"
-          />
-        </Card>
+        <Card><span className={styles.message}>Encontre a porta premiada e ganhe o Jogo</span></Card>
         <Card bgcolor="#28a085">
-          <Link href={`/game/${qtdDoors}/${doorWithGift}`}>
+          <Link href={`/game/${qtdDoors}`}>
             <h2 className={styles.link}>Iníciar</h2>
           </Link>
         </Card>
