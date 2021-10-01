@@ -1,6 +1,6 @@
 # Monty Hall - Encontre a porta premida
 
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/renatomak/projeto-sds3/blob/main/LICENSE)
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/renatomak/monty-hall/blob/main/LICENSE)
 
 ## Sobre o projeto
 
